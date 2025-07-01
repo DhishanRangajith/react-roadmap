@@ -1,0 +1,30 @@
+<html>
+    <head>
+    </head>
+    <body>
+
+        <div id="root"></div>
+
+        <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+
+        <script>
+            // Create an html element
+            const App = () => {
+                return React.createElement(
+                    "div",
+                    {},
+                    "This is React... 123"
+                );
+            };
+
+            const container = document.getElementById("root");
+
+            // Init React's root element
+            const root = ReactDOM.createRoot(container);
+
+            // Load element to the react root
+            root.render(React.createElement(App));
+        </script>
+    </body>
+</html>
