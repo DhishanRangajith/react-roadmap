@@ -11,10 +11,10 @@
         <script>
             // Create an html element
             const App = () => {
-                return React.createElement(
-                    "div",
-                    {},
-                    "This is React... 123"
+                return React.createElement(  // *** Make a div element
+                    "div",                    // Wrapper
+                    {},                       // Params
+                    "This is React... 123"    // Content
                 );
             };
 
@@ -24,7 +24,9 @@
             const root = ReactDOM.createRoot(container);
 
             // Load element to the react root
-            root.render(React.createElement(App));
+            root.render(
+                React.createElement(App) // *** Make a react component
+            );
         </script>
     </body>
 </html>
