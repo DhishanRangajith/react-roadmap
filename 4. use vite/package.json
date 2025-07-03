@@ -1,0 +1,12 @@
+{
+  "name": "'Perttier'",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Dhishan",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "prettier": "^3.6.2",
+    "vite": "6"
+  }
+}

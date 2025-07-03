@@ -1,0 +1,10 @@
+{
+  "name": "'Perttier'",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Dhishan",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
