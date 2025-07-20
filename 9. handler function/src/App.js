@@ -10,7 +10,8 @@ function App() {
     return (
       <div>
         Click here : 
-        <button type="button" onChange={onClick}>Button</button>
+        <button type="button" onClick={onClick}>Button</button>
+        <input type="text" onChange={onClick}></input>
       </div>
     );
 }

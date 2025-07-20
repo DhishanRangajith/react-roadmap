@@ -2,6 +2,7 @@
 
    ```jsx
    <input onChange={func1} />
+   <button onClick={func1}> Click me !<button/>
    ```
 
 2. **Define the Handler Function (`func1`)**
