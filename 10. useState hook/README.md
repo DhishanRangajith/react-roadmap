@@ -3,6 +3,8 @@
    * A **React Hook** used to manage **state** in functional components.
    * It triggers **re-render** when the state changes.
 
+   - import { useState } from 'react';
+
 2. **Syntax**
 
    ```javascript
