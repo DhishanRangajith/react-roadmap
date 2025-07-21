@@ -1,20 +1,20 @@
-// import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
+import Search from './components/search';
 
 function App() {
 
-    const [a, b] = useState();
+    const [searchText, setSearchText] = useState(null);
 
-    const onChange = (event) => {
-      b(event.target.value);
+    const onSearch = (event) => {
+      setSearchText(event.target.value);
     };
 
     return (
       <div>
-        Click here : 
-        <input type="text" onChange={onChange} />
-        <p>Entered text is : {a}</p>
+        <Search parent={onSearch}/>
+        <br/>
+        <p>Searching text is : {searchText}</p>
       </div>
     );
 }
