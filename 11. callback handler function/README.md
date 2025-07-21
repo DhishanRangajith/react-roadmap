@@ -1,29 +1,17 @@
-1. **What is `useState`?**
+### Child to Parent Communication (Callback Function)
 
-   * A **React Hook** used to manage **state** in functional components.
-   * It triggers **re-render** when the state changes.
+* Define a function in the **parent**.
+* Pass it to the **child** as a **prop**.
+* Call it from the **child** to send data back.
 
-2. **Syntax**
+**Example:**
 
-   ```javascript
-   const [a, b] = useState(valA);
-   ```
+```jsx
+// Parent
+<Child sendData={handleData} />
 
-   * `a`: current state value (initially `valA`)
-   * `b`: function to update the value of `a`
+// Child
+sendData("value")
+```
 
-3. **How it works**
-
-   ```javascript
-   b(valB); // updates state
-   ```
-
-   * After calling `b(valB)`:
-
-     * `a` becomes `valB`
-     * The component **automatically re-renders** if `a` is used in JSX.
-
----
-
-> `useState` helps keep UI in sync with state changes.
-
+> Used to pass data from child → parent.
