@@ -17,6 +17,7 @@ const ForEachComponent = ({list}) => {
 
     return (
         <div>
+            <h1>ForEach</h1>
             <table>
                 <thead>
                     <tr>

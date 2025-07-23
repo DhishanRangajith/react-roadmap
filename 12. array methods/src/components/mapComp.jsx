@@ -3,6 +3,7 @@
 const MapComponent = ({list}) => {
     return (
         <div>
+            <h1>Map</h1>
             <table>
                 <thead>
                     <tr>

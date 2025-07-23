@@ -4,6 +4,7 @@ const FindComponent = ({list, age}) => {
 
     return (
         <div>
+            <h1>Find (age grater than or equal to 30)</h1>
             <table>
                 <thead>
                     <tr>

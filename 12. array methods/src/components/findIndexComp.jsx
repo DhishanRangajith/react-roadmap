@@ -5,6 +5,7 @@ const FindIndexComponent = ({list, age}) => {
 
     return (
         <div>
+            <h1>FindIndex (age grater than or equal to 30)</h1>
             <table>
                 <thead>
                     <tr>

@@ -7,6 +7,13 @@ import ForEachComponent from './components/forEachComp';
 import FindComponent from './components/findComp';
 import FindIndexComponent from './components/findIndexComp';
 import ReduceComponent from './components/reduceComp';
+import SomeComponent from './components/someComp';
+import EveryComponent from './components/everyComp';
+import SliceComponent from './components/sliceComp';
+import SpliceComponent from './components/spliceComp';
+import SortComponent from './components/sortComp';
+import FlatComponent from './components/flatComp';
+import FlatMapComponent from './components/flatmapComp';
 
 function App() {
 
@@ -26,24 +33,19 @@ function App() {
 
     return (
       <div>
-        <h1>Map</h1>
         <MapComponent list={students}/>
-
-        <h1>Filter (by name = 'an')</h1>
         <FilterComponent list={students} name="an"/>
-
-        <h1>ForEach</h1>
         <ForEachComponent list={students}/>
-
-        <h1>Find (age grater than or equal to 30)</h1>
         <FindComponent list={students} age={10}/>
-
-        <h1>FindIndex (age grater than or equal to 30)</h1>
         <FindIndexComponent list={students} age={10}/>
-
-        <h1>Reduce (Total age count)</h1>
         <ReduceComponent list={students}/>
-
+        <SomeComponent list={students} />
+        <EveryComponent list={students} />
+        <SliceComponent />
+        <SpliceComponent />
+        <SortComponent />
+        <FlatComponent />
+        <FlatMapComponent />
       </div>
     );
 }

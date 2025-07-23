@@ -12,7 +12,8 @@ const ReduceComponent = ({list}) => {
 
     return (
         <div>
-           <p>Total age count : {totalAgeCount}</p>
+            <h1>Reduce (Total age count)</h1>
+            <p>Total age count : {totalAgeCount}</p>
         </div>
     );
 };

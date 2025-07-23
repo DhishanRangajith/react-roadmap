@@ -6,6 +6,7 @@ const FilterComponent = ({list, name}) => {
 
     return (
         <div>
+            <h1>Filter (by name = 'an')</h1>
             <table>
                 <thead>
                     <tr>
